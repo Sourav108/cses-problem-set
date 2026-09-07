@@ -16,11 +16,11 @@ Foundational algorithms: Simulation, Bit Manipulation, Recursion, Number Theory,
 - [x] **Problem 03**: [Repetitions](./03-repetitions.md) — [`CSES 1069`](https://cses.fi/problemset/task/1069) — 🟢 Solved
 - [x] **Problem 04**: [Increasing Array](./04-increasing-array.md) — [`CSES 1094`](https://cses.fi/problemset/task/1094) — 🟢 Solved
 - [x] **Problem 05**: [Permutations](./05-permutations.md) — [`CSES 1070`](https://cses.fi/problemset/task/1070) — 🟢 Solved
-- [ ] **Problem 06**: [Number Spiral](./06-number-spiral.md) — [`CSES 1071`](https://cses.fi/problemset/task/1071) — ⚪ Pending
-- [ ] **Problem 07**: [Two Knights](./07-two-knights.md) — [`CSES 1072`](https://cses.fi/problemset/task/1072) — ⚪ Pending
-- [ ] **Problem 08**: [Two Sets](./08-two-sets.md) — [`CSES 1092`](https://cses.fi/problemset/task/1092) — ⚪ Pending
-- [ ] **Problem 09**: [Bit Strings](./09-bit-strings.md) — [`CSES 1617`](https://cses.fi/problemset/task/1617) — ⚪ Pending
-- [ ] **Problem 10**: [Trailing Zeros](./10-trailing-zeros.md) — [`CSES 1618`](https://cses.fi/problemset/task/1618) — ⚪ Pending
+- [x] **Problem 06**: [Number Spiral](./06-number-spiral.md) — [`CSES 1071`](https://cses.fi/problemset/task/1071) — 🟢 Solved
+- [x] **Problem 07**: [Two Knights](./07-two-knights.md) — [`CSES 1072`](https://cses.fi/problemset/task/1072) — 🟢 Solved
+- [x] **Problem 08**: [Two Sets](./08-two-sets.md) — [`CSES 1092`](https://cses.fi/problemset/task/1092) — 🟢 Solved
+- [x] **Problem 09**: [Bit Strings](./09-bit-strings.md) — [`CSES 1617`](https://cses.fi/problemset/task/1617) — 🟢 Solved
+- [x] **Problem 10**: [Trailing Zeros](./10-trailing-zeros.md) — [`CSES 1618`](https://cses.fi/problemset/task/1618) — 🟢 Solved
 - [ ] **Problem 11**: [Coin Piles](./11-coin-piles.md) — [`CSES 1754`](https://cses.fi/problemset/task/1754) — ⚪ Pending
 - [ ] **Problem 12**: [Palindrome Reorder](./12-palindrome-reorder.md) — [`CSES 1755`](https://cses.fi/problemset/task/1755) — ⚪ Pending
 - [ ] **Problem 13**: [Gray Code](./13-gray-code.md) — [`CSES 2205`](https://cses.fi/problemset/task/2205) — ⚪ Pending

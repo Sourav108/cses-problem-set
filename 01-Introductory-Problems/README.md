@@ -21,11 +21,11 @@ Foundational algorithms: Simulation, Bit Manipulation, Recursion, Number Theory,
 - [x] **Problem 08**: [Two Sets](./08-two-sets.md) — [`CSES 1092`](https://cses.fi/problemset/task/1092) — 🟢 Solved
 - [x] **Problem 09**: [Bit Strings](./09-bit-strings.md) — [`CSES 1617`](https://cses.fi/problemset/task/1617) — 🟢 Solved
 - [x] **Problem 10**: [Trailing Zeros](./10-trailing-zeros.md) — [`CSES 1618`](https://cses.fi/problemset/task/1618) — 🟢 Solved
-- [ ] **Problem 11**: [Coin Piles](./11-coin-piles.md) — [`CSES 1754`](https://cses.fi/problemset/task/1754) — ⚪ Pending
-- [ ] **Problem 12**: [Palindrome Reorder](./12-palindrome-reorder.md) — [`CSES 1755`](https://cses.fi/problemset/task/1755) — ⚪ Pending
-- [ ] **Problem 13**: [Gray Code](./13-gray-code.md) — [`CSES 2205`](https://cses.fi/problemset/task/2205) — ⚪ Pending
-- [ ] **Problem 14**: [Tower of Hanoi](./14-tower-of-hanoi.md) — [`CSES 2165`](https://cses.fi/problemset/task/2165) — ⚪ Pending
-- [ ] **Problem 15**: [Creating Strings](./15-creating-strings.md) — [`CSES 1622`](https://cses.fi/problemset/task/1622) — ⚪ Pending
+- [x] **Problem 11**: [Coin Piles](./11-coin-piles.md) — [`CSES 1754`](https://cses.fi/problemset/task/1754) — 🟢 Solved
+- [x] **Problem 12**: [Palindrome Reorder](./12-palindrome-reorder.md) — [`CSES 1755`](https://cses.fi/problemset/task/1755) — 🟢 Solved
+- [x] **Problem 13**: [Gray Code](./13-gray-code.md) — [`CSES 2205`](https://cses.fi/problemset/task/2205) — 🟢 Solved
+- [x] **Problem 14**: [Tower of Hanoi](./14-tower-of-hanoi.md) — [`CSES 2165`](https://cses.fi/problemset/task/2165) — 🟢 Solved
+- [x] **Problem 15**: [Creating Strings](./15-creating-strings.md) — [`CSES 1622`](https://cses.fi/problemset/task/1622) — 🟢 Solved
 - [ ] **Problem 16**: [Apple Division](./16-apple-division.md) — [`CSES 1623`](https://cses.fi/problemset/task/1623) — ⚪ Pending
 - [ ] **Problem 17**: [Chessboard and Queens](./17-chessboard-and-queens.md) — [`CSES 1624`](https://cses.fi/problemset/task/1624) — ⚪ Pending
 - [ ] **Problem 18**: [Raab Game I](./18-raab-game-i.md) — [`CSES 3399`](https://cses.fi/problemset/task/3399) — ⚪ Pending

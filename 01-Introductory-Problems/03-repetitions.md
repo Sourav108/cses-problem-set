@@ -1,6 +1,6 @@
 # Repetitions (CSES Task 1069 — Introductory Problems)
 
-This is a complete, gold-standard competitive programming note in C++ following the standardized 9-section format.
+This is a complete, gold-standard competitive programming note in C++ following the standardized 10-section format.
 
 - **Source**: [CSES Task 1069 - Repetitions](https://cses.fi/problemset/task/1069)
 - **Category**: `01-Introductory-Problems`
@@ -14,15 +14,15 @@ This is a complete, gold-standard competitive programming note in C++ following 
 
 Given a string of up to $10^6$ characters made exclusively of `{A, C, G, T}`, determine the length of the longest contiguous block of identical characters.
 
-**Input**: A single line containing a non-empty string.  
-**Output**: A single integer denoting the maximum length.  
+**Input**: A single line containing a non-empty string via `cin`.  
+**Output**: A single integer denoting the maximum length on `cout` ending with `\n`.  
 **Key Constraints**: $n \le 10^6$. An $\mathcal{O}(n^2)$ solution requires $10^{12}$ operations, which will heavily TLE. An $\mathcal{O}(n)$ single-pass scan is strictly required.
 
 ---
 
 ## 2. Intuition & Pattern Recognition
 
-- **Pattern**: Two Pointers / Run-Length Scanning / Greedy Sliding Window.
+- **Pattern**: Run-Length Scanning / Greedy Sliding Window.
 - **Aha! Insight**: As we iterate through the characters from left to right, we only need to compare each character with its immediate predecessor:
   - If `s[i] == s[i - 1]`, the current run continues: `current_streak++`.
   - If `s[i] != s[i - 1]`, a new run begins: `current_streak = 1`.
@@ -31,7 +31,7 @@ Given a string of up to $10^6$ characters made exclusively of `{A, C, G, T}`, de
 
 ---
 
-## 3. Approach 1 — Naive (Checking Every Substring)
+## 3. Approach 1 — Naive / Baseline (Checking Every Substring)
 
 ### Idea
 For every starting index $i$ and ending index $j$, verify if all characters in the substring $s[i \dots j]$ are identical.
@@ -92,7 +92,7 @@ using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(nullptr);
 
     string s;
     if (!(cin >> s)) return 0;
@@ -123,9 +123,9 @@ int main() {
 ## 5. Approach 3 — Optimal CSES Solution (Single-Pass Online Scan)
 
 ### Idea
-We can read the string character by character (or in a single pass over `std::string`) maintaining only `current_len` and `max_len`. This requires only $\mathcal{O}(1)$ auxiliary memory and completes in one linear pass.
+We can scan the string in a single linear pass maintaining only `current_len` and `max_len`. This requires only $\mathcal{O}(1)$ auxiliary memory and finishes in one pass.
 
-### C++17 Production Code
+### C++17 Contest-Ready Code
 ```cpp
 #include <iostream>
 #include <string>
@@ -134,9 +134,9 @@ We can read the string character by character (or in a single pass over `std::st
 using namespace std;
 
 int main() {
-    // Fast I/O for 1M characters
+    // Standardized Fast I/O for 1M characters
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(nullptr);
 
     string s;
     if (!(cin >> s)) return 0;
@@ -164,11 +164,23 @@ int main() {
 ### Complexity Derivation
 - **Time Complexity**: $\mathcal{O}(n)$ — exact $n - 1$ character comparisons. For $n = 10^6$, takes $\approx 12$ ms.
 - **Space Complexity**: $\mathcal{O}(n)$ to store the string ($\approx 1$ MB, well within 512 MB). Can be reduced to $\mathcal{O}(1)$ space using character-by-character stream reading.
-- **Optimality**: To know if any contiguous run is longer, every character must be examined at least once ($\Omega(n)$ bound).
+- **Optimality**: Matches the best known/asymptotically optimal complexity for the problem ($\Omega(n)$ lower bound to examine the input) and comfortably satisfies the CSES limits.
 
 ---
 
-## 6. Dry Run & Visual State Trace
+## 6. Correctness Proof
+
+- **Invariant Definition**: Let $L(i)$ be the length of the longest contiguous monochromatic block ending at index $i$, and $M(i) = \max_{0 \le k \le i} L(k)$ be the global maximum length over the prefix $s[0 \dots i]$.
+- **Base Case**: At $i = 0$, $L(0) = 1$ and $M(0) = 1$, which is correct for a string of length 1.
+- **Inductive Step**: Assume $L(i-1)$ and $M(i-1)$ are correct.
+  - If $s[i] == s[i-1]$, character $s[i]$ extends the monochromatic block ending at $i-1$. Therefore $L(i) = L(i-1) + 1$.
+  - If $s[i] \ne s[i-1]$, no contiguous monochromatic block can cross the boundary between $i-1$ and $i$. The block ending at $i$ starts at $i$, so $L(i) = 1$.
+  - In both cases, $M(i) = \max(M(i-1), L(i))$.
+- **Termination & Completeness**: The loop covers all indices $1 \dots n-1$. Upon termination, $M(n-1)$ is strictly the maximum length of any monochromatic contiguous substring in $s$.
+
+---
+
+## 7. Dry Run & Visual State Trace
 
 Input: `s = "ATTCGGGA"`
 
@@ -187,16 +199,16 @@ Output: `3` (from `"GGG"`) ✅
 
 ---
 
-## 7. Edge Cases, Overflow Gotchas & CSES Constraints
+## 8. Edge Cases, Overflow Gotchas & CSES Constraints
 
 - **Length $n = 1$**: Loop from index 1 to $n-1$ never runs; correctly prints initialized `max_len = 1`.
 - **All characters identical** (e.g. `"AAAAAA"`): `current_len` grows monotonically to $n$; correctly outputs $n$.
 - **All characters alternating** (e.g. `"ACGTACGT"`): `current_len` resets on each step; correctly outputs 1.
-- **Memory Footprint**: `std::string` of $10^6$ characters occupies $1$ MB, comfortably within the 512 MB limit.
+- **Memory Footprint**: `string` of $10^6$ characters occupies $1$ MB, comfortably within the 512 MB limit.
 
 ---
 
-## 8. Competitive Programming & Interview Follow-Up Questions
+## 9. Competitive Programming & Interview Follow-Up Questions
 
 1. **Q1: What if memory limit is 1 KB (streaming data)?**
    - **A**: Read characters one by one with `char ch; while (cin >> ch)` without saving the string. Compare with `prev_ch`. Memory is strictly $\mathcal{O}(1)$.
@@ -211,12 +223,12 @@ Output: `3` (from `"GGG"`) ✅
 
 ---
 
-## 9. Tags, Complexity Summary & Related CSES Problems
+## 10. Tags, Complexity Summary & Related CSES Problems
 
 - **Tags**: `Strings`, `Two-Pointers`, `Greedy`, `Linear-Scan`, `Fast-IO`
-- **Complexity**:
-  - Time: $\mathcal{O}(n)$
-  - Space: $\mathcal{O}(1)$ auxiliary space
+- **Complexity Summary**:
+  - **Time**: $\mathcal{O}(n)$
+  - **Space**: $\mathcal{O}(1)$ auxiliary space
 - **Related CSES Problems**:
   - **[CSES 1083 - Missing Number](https://cses.fi/problemset/task/1083)**: Single-pass invariant verification.
   - **[CSES 1094 - Increasing Array](https://cses.fi/problemset/task/1094)**: Sequential adjacent element adjustments.

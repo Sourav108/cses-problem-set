@@ -32,4 +32,4 @@ Tree hierarchies: Tree traversals, subtree aggregations, tree diameter, Binary L
 
 ## 💡 How to Add or Update Solutions
 
-All 16 problems in `06-Tree-Algorithms` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 16 problems in `06-Tree-Algorithms` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

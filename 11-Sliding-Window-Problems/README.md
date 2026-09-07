@@ -27,4 +27,4 @@ Window algorithms: Monotonic deques, sliding window min/max, variable-sized wind
 
 ## 💡 How to Add or Update Solutions
 
-All 11 problems in `11-Sliding-Window-Problems` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 11 problems in `11-Sliding-Window-Problems` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

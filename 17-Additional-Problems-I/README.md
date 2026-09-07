@@ -46,4 +46,4 @@ Hard competitive programming challenges: Advanced DP optimizations, sqrt decompo
 
 ## 💡 How to Add or Update Solutions
 
-All 30 problems in `17-Additional-Problems-I` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 30 problems in `17-Additional-Problems-I` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

@@ -27,4 +27,4 @@ Bitwise manipulation: XOR algebra, Sum Over Subsets (SOS DP), Gray code construc
 
 ## 💡 How to Add or Update Solutions
 
-All 11 problems in `13-Bitwise-Operations` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 11 problems in `13-Bitwise-Operations` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

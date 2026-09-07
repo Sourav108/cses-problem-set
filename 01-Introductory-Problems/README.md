@@ -40,4 +40,4 @@ Foundational algorithms: Simulation, Bit Manipulation, Recursion, Number Theory,
 
 ## 💡 How to Add or Update Solutions
 
-All 24 problems in `01-Introductory-Problems` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 24 problems in `01-Introductory-Problems` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

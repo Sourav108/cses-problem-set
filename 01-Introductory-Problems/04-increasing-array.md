@@ -1,6 +1,6 @@
 # Increasing Array (CSES Task 1094 — Introductory Problems)
 
-This is a complete, gold-standard competitive programming note in C++ following the standardized 9-section format.
+This is a complete, gold-standard competitive programming note in C++ following the standardized 10-section format.
 
 - **Source**: [CSES Task 1094 - Increasing Array](https://cses.fi/problemset/task/1094)
 - **Category**: `01-Introductory-Problems`
@@ -14,8 +14,8 @@ This is a complete, gold-standard competitive programming note in C++ following 
 
 Make an array non-decreasing ($x_0 \le x_1 \le x_2 \le \dots \le x_{n-1}$) by only *increasing* elements. Find the minimum total additions needed.
 
-**Input**: First line contains $n$. Second line contains $n$ integers $x_1, x_2, \dots, x_n$.  
-**Output**: Print the minimum number of moves.  
+**Input**: First line contains $n$. Second line contains $n$ integers $x_1, x_2, \dots, x_n$ via `cin`.  
+**Output**: Print the minimum number of moves on `cout` ending with `\n`.  
 **Critical Constraint**: $n \le 2 \cdot 10^5$ and $x_i \le 10^9$. If $x_0 = 10^9$ and all remaining $2 \cdot 10^5 - 1$ elements are $1$, the required moves are $\approx 2 \cdot 10^5 \times 10^9 = 2 \cdot 10^{14}$, which drastically overflows a 32-bit signed integer. The accumulator **must** be 64-bit `long long`.
 
 ---
@@ -26,12 +26,12 @@ Make an array non-decreasing ($x_0 \le x_1 \le x_2 \le \dots \le x_{n-1}$) by on
 - **Aha! Insight**: We process elements strictly from left to right. Because we can only *increase* elements (never decrease), element $x_i$ can never force an earlier element $x_{i-1}$ to change. Thus, to minimize total moves:
   - If $x_i < x_{i-1}$, the optimal choice is to raise $x_i$ to exactly $x_{i-1}$. Raising it higher than $x_{i-1}$ would only make subsequent elements harder to satisfy without providing any benefit to $x_i$.
   - Number of moves added at step $i$: $\max(0LL, x_{i-1} - x_i)$.
-  - Effectively, each element becomes $\max(x_0, x_1, \dots, x_i)$.
+  - Effectively, each modified element becomes $\max(x_0, x_1, \dots, x_i)$.
 - **Signal**: "Only increases allowed" + "Non-decreasing target" + "Minimize cost" $\implies$ Local greedy decisions are globally optimal.
 
 ---
 
-## 3. Approach 1 — Naive (Step-by-Step Increment Simulation)
+## 3. Approach 1 — Naive / Baseline (Step-by-Step Increment Simulation)
 
 ### Idea
 Iterate through the array and use a `while (x[i] < x[i - 1])` loop, incrementing `x[i]` by 1 on each step.
@@ -69,8 +69,9 @@ int main() {
 
 ---
 
-## 4. Approach 2 — Intermediate (Storing Full Array)
+## 4. Approach 2 — Intermediate (Storing Full Array in Memory)
 
+### Idea
 Read the entire array into a `vector<long long>` and compute differences in $\mathcal{O}(1)$ per element:
 ```cpp
 if (x[i] < x[i - 1]) {
@@ -78,28 +79,27 @@ if (x[i] < x[i - 1]) {
     x[i] = x[i - 1];
 }
 ```
-This is $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ space.
+This requires $\mathcal{O}(n)$ time and $\mathcal{O}(n)$ auxiliary memory.
 
 ---
 
 ## 5. Approach 3 — Optimal CSES Solution (Online Streaming with $\mathcal{O}(1)$ Memory)
 
 ### Idea
-We do not even need to allocate an array!
 Maintain `prev_val` (representing the running maximum of all elements seen so far). For each incoming number `curr`:
 - If `curr < prev_val`, add `prev_val - curr` to `moves`.
 - Otherwise, update `prev_val = curr`.
 
-### C++17 Production Code
+### C++17 Contest-Ready Code
 ```cpp
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    // Fast I/O
+    // Standardized Fast I/O
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(nullptr);
 
     int n;
     if (!(cin >> n)) return 0;
@@ -129,11 +129,23 @@ int main() {
 ### Complexity Derivation
 - **Time Complexity**: $\mathcal{O}(n)$ — exactly $n - 1$ scalar comparisons and subtractions, running in $\approx 2$ ms for $n = 2 \cdot 10^5$.
 - **Space Complexity**: $\mathcal{O}(1)$ auxiliary space — only two scalar variables (`prev_val` and `curr`).
-- **Optimality**: Every element must be inspected at least once ($\Omega(n)$ bound). Memory footprint is minimal ($\mathcal{O}(1)$).
+- **Optimality Guarantee**: Matches the best known/asymptotically optimal complexity for the problem ($\Omega(n)$ lower bound to read the input) and comfortably satisfies the CSES limits.
 
 ---
 
-## 6. Dry Run & Visual State Trace
+## 6. Correctness Proof
+
+- **Invariant**: After processing element $i$, the modified prefix $x'[0 \dots i]$ satisfies $x'[0] \le x'[1] \le \dots \le x'[i]$, where $x'[i] = \max_{0 \le k \le i} x_k$.
+- **Greedy-Choice Property & Exchange Argument**:
+  - We require $x'[i] \ge x_i$ (since only increases are allowed) and $x'[i] \ge x'[i-1]$.
+  - Therefore, $x'[i] \ge \max(x_i, x'[i-1])$.
+  - Suppose an alternative valid solution $S$ sets $x^*[i] > \max(x_i, x'[i-1])$. Reducing $x^*[i]$ to $\max(x_i, x'[i-1])$ strictly decreases the moves spent on index $i$ by $x^*[i] - \max(x_i, x'[i-1])$ without violating the requirement $x^*[i] \ge x'[i-1]$ or making subsequent elements harder to satisfy (since smaller values of $x'[i]$ loosen the constraint $x'[i+1] \ge x'[i]$).
+  - Thus, setting $x'[i] = \max(x_i, x'[i-1])$ is globally optimal.
+- **Termination**: The stream loop executes exactly $n - 1$ times and terminates deterministically.
+
+---
+
+## 7. Dry Run & Visual State Trace
 
 Input: `n = 5`, array: `[3, 2, 5, 1, 7]`
 
@@ -149,7 +161,7 @@ Final Output: `5` moves ✅
 
 ---
 
-## 7. Edge Cases, Overflow Gotchas & CSES Constraints
+## 8. Edge Cases, Overflow Gotchas & CSES Constraints
 
 - **Integer Overflow**: Accumulator `moves` can reach $2 \cdot 10^{14}$. Storing `moves` in a standard 32-bit `int` will overflow to a negative number, causing a Wrong Answer on CSES test cases. Always use `long long`.
 - **Already Non-decreasing Array** (e.g. `[1, 2, 3, 4, 5]`): `curr < prev_val` is never true; outputs `0`.
@@ -158,7 +170,7 @@ Final Output: `5` moves ✅
 
 ---
 
-## 8. Competitive Programming & Interview Follow-Up Questions
+## 9. Competitive Programming & Interview Follow-Up Questions
 
 1. **Q1: What if we can both increment AND decrement elements by 1, and want to make the array strictly increasing with minimum moves?**
    - **A**: Transform to non-decreasing by defining $b[i] = a[i] - i$. The problem reduces to finding a non-decreasing sequence $b$ minimizing $\sum |a[i] - b[i]|$, which is solved using Slope Trick / Priority Queue in $\mathcal{O}(n \log n)$ (CF 713C / LeetCode 1187).
@@ -173,12 +185,12 @@ Final Output: `5` moves ✅
 
 ---
 
-## 9. Tags, Complexity Summary & Related CSES Problems
+## 10. Tags, Complexity Summary & Related CSES Problems
 
 - **Tags**: `Greedy`, `Prefix-Max`, `Overflow-Safety`, `Online-Algorithm`, `Fast-IO`
-- **Complexity**:
-  - Time: $\mathcal{O}(n)$
-  - Space: $\mathcal{O}(1)$ auxiliary space
+- **Complexity Summary**:
+  - **Time**: $\mathcal{O}(n)$
+  - **Space**: $\mathcal{O}(1)$ auxiliary space
 - **Related CSES Problems**:
   - **[CSES 1070 - Permutations](https://cses.fi/problemset/task/1070)**: Constructive parity-based ordering.
   - **[CSES 1071 - Number Spiral](https://cses.fi/problemset/task/1071)**: Constant-time mathematical grid deduction.

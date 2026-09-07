@@ -34,4 +34,4 @@ Combinatorial counting: Inclusion-Exclusion, Burnside's Lemma, Stirling Numbers,
 
 ## 💡 How to Add or Update Solutions
 
-All 18 problems in `16-Counting-Problems` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 18 problems in `16-Counting-Problems` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

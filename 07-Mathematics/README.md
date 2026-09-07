@@ -53,4 +53,4 @@ Number theory & combinatorics: Modular inverse, fast exponentiation, extended Eu
 
 ## 💡 How to Add or Update Solutions
 
-All 37 problems in `07-Mathematics` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 37 problems in `07-Mathematics` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

@@ -32,4 +32,4 @@ Computational geometry: Point orientation, cross products, segment intersections
 
 ## 💡 How to Add or Update Solutions
 
-All 16 problems in `09-Geometry` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 16 problems in `09-Geometry` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

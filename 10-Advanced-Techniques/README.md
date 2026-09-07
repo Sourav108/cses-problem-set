@@ -41,4 +41,4 @@ Competitive programming mastery: Meet in the Middle, Heavy-Light Decomposition (
 
 ## 💡 How to Add or Update Solutions
 
-All 25 problems in `10-Advanced-Techniques` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 25 problems in `10-Advanced-Techniques` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

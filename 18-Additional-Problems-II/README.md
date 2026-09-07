@@ -46,4 +46,4 @@ Challenging CP problems: Hybrid range structures, higher-dimensional geometry, a
 
 ## 💡 How to Add or Update Solutions
 
-All 30 problems in `18-Additional-Problems-II` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 30 problems in `18-Additional-Problems-II` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

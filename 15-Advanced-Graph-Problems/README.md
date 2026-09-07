@@ -44,4 +44,4 @@ Advanced graph theory: Dinic's Max Flow, Hopcroft-Karp Bipartite Matching, Min C
 
 ## 💡 How to Add or Update Solutions
 
-All 28 problems in `15-Advanced-Graph-Problems` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 28 problems in `15-Advanced-Graph-Problems` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

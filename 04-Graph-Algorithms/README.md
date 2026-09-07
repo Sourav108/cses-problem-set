@@ -52,4 +52,4 @@ Complete graph theory: BFS/DFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal 
 
 ## 💡 How to Add or Update Solutions
 
-All 36 problems in `04-Graph-Algorithms` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 36 problems in `04-Graph-Algorithms` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

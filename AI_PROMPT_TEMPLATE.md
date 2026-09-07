@@ -29,8 +29,8 @@ Explicitly specify the standard input and output format, and call out the specif
 - Explain the key mathematical or algorithmic "aha" insight that unlocks the optimal solution from first principles.
 - Highlight the subtle clue in the problem statement or constraints that signals this specific pattern.
 
-## 3. Approach 1 — Naive / Brute Force
-- Plain-English idea.
+## 3. Approach 1 — Naive / Brute Force (or Simplest Baseline)
+- Plain-English idea. If a brute-force implementation would be excessively large or uninformative, give the simplest correct baseline instead and explain why.
 - Complete, compilable C++17 code using standard competitive programming headers (`#include <iostream>`, `<vector>`, etc.).
 - Time Complexity: rigorously derived with respect to real problem variables ($N, M, K$).
 - Space Complexity: auxiliary and memory footprint derived.
@@ -38,53 +38,60 @@ Explicitly specify the standard input and output format, and call out the specif
 
 ## 4. Approach 2 — Intermediate / Better
 Only include this if there is a genuinely distinct intermediate approach (e.g. $\mathcal{O}(N \sqrt{N})$ Mo's algorithm or recursive memoization with $\mathcal{O}(N)$ memory before space-optimized tabulation).
-If the brute force jumps directly to the optimal solution, write:
+If the brute force jumps directly to the optimal solution, explicitly keep Section 4 and write:
 "No meaningful intermediate step — the optimal approach below eliminates the brute force bottleneck directly." and proceed to Section 5.
 - Same structure as Approach 1 (Idea, C++ Code, TC, SC, what improved and why it is still sub-optimal).
 
 ## 5. Approach 3 — Optimal CSES Solution
 - Plain-English idea, built methodically from the fundamental invariant or recurrence.
-- Complete, compilable, production-quality C++17/20 code:
-  - Must include Fast I/O:
+- Complete, compilable, contest-ready C++17/20 code:
+  - Must include standardized Fast I/O:
     ```cpp
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(nullptr);
     ```
   - Use `long long` where sums or products can exceed $2^{31}-1$.
   - Use `'\n'` instead of `endl` to avoid flushing stream buffers.
-  - Idiomatic STL usage (e.g. `std::vector`, `std::priority_queue`, PBDS if needed).
+  - Idiomatic STL usage (e.g. `vector`, `priority_queue`, PBDS if needed).
   - Clean comments only on non-trivial logic.
 - Time Complexity: mathematically derived.
 - Space Complexity: auxiliary and total space derived.
-- Optimality Guarantee: explain why this meets the theoretical lower bound and passes comfortably within the CSES 1.00s time and 512MB memory limits.
+- Optimality Guarantee: explain why this matches the best known/asymptotically optimal complexity for the problem and comfortably satisfies the CSES limits.
 
-## 6. Dry Run & Visual State Trace
+## 6. Correctness Proof
+- State the invariant / greedy-choice property / DP recurrence / graph property.
+- Prove the algorithm maintains the invariant at each transition.
+- Prove termination.
+- Prove that the final result satisfies all problem constraints.
+- For greedy algorithms, explicitly provide the exchange argument when applicable.
+
+## 7. Dry Run & Visual State Trace
 Walk through a non-trivial concrete example (either from the problem statement or crafted to test edge cases).
 Present a structured ASCII/Markdown table or step-by-step state trace illustrating how the pointers, DP table, stack, or variables evolve until reaching the final output.
 
-## 7. Edge Cases, Overflow Gotchas & CSES Constraints
+## 8. Edge Cases, Overflow Gotchas & CSES Constraints
 - Boundary cases: $N = 1$, empty transitions, identical elements, disconnected graph components, 0-weight edges, or maximum values.
 - Integer Overflow Traps: arithmetic that exceeds 32-bit signed integers (e.g. $10^5 \times 10^5 = 10^{10}$, requiring `1LL * a * b`).
-- Competitive Programming Gotchas: recursion stack depth limits (avoiding deep recursive DFS when $N=2\cdot 10^5$ or setting appropriate pragmas), hash collisions in `std::unordered_map` (using custom splitmix64 hashes against anti-hash test cases).
+- Competitive Programming Gotchas: recursion stack depth limits (avoiding deep recursive DFS when $N=2\cdot 10^5$ or setting appropriate pragmas), hash collisions in `unordered_map` (using custom splitmix64 hashes against anti-hash test cases).
 
-## 8. Competitive Programming & Interview Follow-Up Questions
-Provide 5 realistic follow-up questions and extensions, each with a concise, rigorous answer:
-1. Variant with dynamic updates / offline queries.
-2. Variant with tighter space constraints ($\mathcal{O}(1)$ auxiliary space).
-3. Variant with negative weights, cycles, or larger numerical bounds ($10^{18}$).
-4. Higher dimension or tree/graph extension.
-5. Online streaming version.
+## 9. Competitive Programming & Interview Follow-Up Questions
+Provide 5 realistic follow-up questions and extensions tailored to the actual algorithm (do not invent unnatural variants), each with a concise, rigorous answer:
+1. Dynamic updates / offline query processing.
+2. Space-constrained optimization ($\mathcal{O}(1)$ auxiliary space).
+3. Scale extensions ($N, \text{values} \le 10^{18}$, negative cycles/weights).
+4. Structural extensions (higher dimensions, trees, DAGs).
+5. Streaming / online processing.
 
-## 9. Tags, Complexity Summary & Related CSES Problems
+## 10. Tags, Complexity Summary & Related CSES Problems
 - Tags: `[category-tag, algorithm-tag, data-structure-tag]`
 - Complexity Summary:
   - Time: $\mathcal{O}(...)$
   - Space: $\mathcal{O}(...)$
-- Related CSES Problems: 3-4 problems from the CSES Problem Set that reinforce this technique (include CSES Task ID, problem name, and one-line rationale).
+- Related CSES Problems: 3-4 problems from the CSES Problem Set that reinforce this technique (include CSES Task ID, problem name, and one-line rationale). Only recommend genuinely related CSES problems; do not force unrelated problems just to reach a count.
 
 RULES
 - STRICTLY C++ ONLY: Do NOT provide Java code.
-- Always include `using namespace std;` in all C++ code snippets. Do not use `std::` prefixes in code (use `cin`, `cout`, `vector`, `string`, `endl`, `min`, `max`, etc.).
+- Always include `using namespace std;` in all C++ code snippets. Do not use `std::` prefixes in code (use `cin`, `cout`, `vector`, `string`, `'\n'`, `min`, `max`, etc.).
 - All code must compile cleanly with `g++ -std=c++17 -O2 -Wall`.
 - Use exact Big-O notation with real variables ($N, M, V, E, Q, K$), never vague adjectives like "fast".
 - Code must read from `cin` and write to `cout` as per standard CSES problem format.

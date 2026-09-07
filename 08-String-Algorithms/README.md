@@ -37,4 +37,4 @@ String processing: Polynomial rolling hash, Trie, KMP prefix function, Z-algorit
 
 ## 💡 How to Add or Update Solutions
 
-All 21 problems in `08-String-Algorithms` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 21 problems in `08-String-Algorithms` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

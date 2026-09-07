@@ -43,16 +43,17 @@ flowchart LR
 
 1. **Open the problem** on [CSES Problem Set](https://cses.fi/problemset/).
 2. **Open [`AI_PROMPT_TEMPLATE.md`](./AI_PROMPT_TEMPLATE.md)**, copy the fenced prompt block, and fill in the 5 fields (*Name, Category, CSES Task ID & Link, Limits, Statement & Constraints*).
-3. **Paste into Claude / AI** to get the standardized 9-part competitive programming note:
+3. **Paste into Claude / AI** to get the standardized 10-part competitive programming note:
    - 1. Problem, Restated
    - 2. Intuition & Pattern Recognition
-   - 3. Approach 1 — Naive / Brute Force
+   - 3. Approach 1 — Naive / Brute Force (or Simplest Baseline)
    - 4. Approach 2 — Intermediate / Better
    - 5. Approach 3 — Optimal CSES Solution (with derived Time/Space Complexity)
-   - 6. Dry Run & Visual State Trace
-   - 7. Edge Cases, Overflow Gotchas & CSES Constraints
-   - 8. Competitive Programming & Interview Follow-Up Questions
-   - 9. Tags, Complexity Summary & Related CSES Problems
+   - 6. Correctness Proof (Invariants, Exchange Arguments, Termination)
+   - 7. Dry Run & Visual State Trace
+   - 8. Edge Cases, Overflow Gotchas & CSES Constraints
+   - 9. Competitive Programming & Interview Follow-Up Questions
+   - 10. Tags, Complexity Summary & Related CSES Problems
 4. **Save the response** as `NN-problem-slug.md` in the appropriate category folder.
 5. Review [`EXAMPLE_Weird_Algorithm.md`](./EXAMPLE_Weird_Algorithm.md) for the benchmark quality standard.
 
@@ -71,7 +72,7 @@ using namespace std;
 
 int main() {
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    cin.tie(nullptr);
     // Use '\n' instead of endl to avoid redundant stream flushes
 }
 ```

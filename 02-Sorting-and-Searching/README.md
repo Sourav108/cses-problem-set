@@ -51,4 +51,4 @@ Mastery of sorting, binary search on answers, two pointers, sweep-line algorithm
 
 ## 💡 How to Add or Update Solutions
 
-All 35 problems in `02-Sorting-and-Searching` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 35 problems in `02-Sorting-and-Searching` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

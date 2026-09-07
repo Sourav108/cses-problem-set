@@ -41,4 +41,4 @@ Range queries and point/range updates: Fenwick Trees (BIT), Segment Trees, Lazy 
 
 ## 💡 How to Add or Update Solutions
 
-All 25 problems in `05-Range-Queries` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 25 problems in `05-Range-Queries` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

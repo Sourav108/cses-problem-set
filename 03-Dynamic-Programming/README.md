@@ -39,4 +39,4 @@ Classical and advanced DP: 1D/2D state tabulation, coin combinations, LIS in O(N
 
 ## 💡 How to Add or Update Solutions
 
-All 23 problems in `03-Dynamic-Programming` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 23 problems in `03-Dynamic-Programming` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

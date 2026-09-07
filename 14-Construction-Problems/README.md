@@ -24,4 +24,4 @@ Constructive algorithms: Mathematical invariants, parity preservation, permutati
 
 ## 💡 How to Add or Update Solutions
 
-All 8 problems in `14-Construction-Problems` are solved using the standardized 9-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).
+All 8 problems in `14-Construction-Problems` are solved using the standardized 10-section format defined in [`../AI_PROMPT_TEMPLATE.md`](../AI_PROMPT_TEMPLATE.md).

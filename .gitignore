@@ -1,0 +1,19 @@
+# C++ compilation artifacts
+*.o
+*.out
+*.exe
+*.dSYM/
+*.app
+
+# Editor and OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and temporary files
+build/
+bin/
+scratch/
+test_runner

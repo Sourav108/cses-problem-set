@@ -21,16 +21,16 @@ Mastery of sorting, binary search on answers, two pointers, sweep-line algorithm
 - [x] **Problem 08**: [Maximum Subarray Sum](./08-maximum-subarray-sum.md) — [`CSES 1643`](https://cses.fi/problemset/task/1643) — 🟢 Solved
 - [x] **Problem 09**: [Stick Lengths](./09-stick-lengths.md) — [`CSES 1074`](https://cses.fi/problemset/task/1074) — 🟢 Solved
 - [x] **Problem 10**: [Missing Coin Sum](./10-missing-coin-sum.md) — [`CSES 2183`](https://cses.fi/problemset/task/2183) — 🟢 Solved
-- [ ] **Problem 11**: [Collecting Numbers](./11-collecting-numbers.md) — [`CSES 2216`](https://cses.fi/problemset/task/2216) — ⚪ Pending
-- [ ] **Problem 12**: [Collecting Numbers II](./12-collecting-numbers-ii.md) — [`CSES 2217`](https://cses.fi/problemset/task/2217) — ⚪ Pending
-- [ ] **Problem 13**: [Playlist](./13-playlist.md) — [`CSES 1141`](https://cses.fi/problemset/task/1141) — ⚪ Pending
-- [ ] **Problem 14**: [Towers](./14-towers.md) — [`CSES 1073`](https://cses.fi/problemset/task/1073) — ⚪ Pending
-- [ ] **Problem 15**: [Traffic Lights](./15-traffic-lights.md) — [`CSES 1163`](https://cses.fi/problemset/task/1163) — ⚪ Pending
-- [ ] **Problem 16**: [Distinct Values Subarrays](./16-distinct-values-subarrays.md) — [`CSES 3420`](https://cses.fi/problemset/task/3420) — ⚪ Pending
-- [ ] **Problem 17**: [Distinct Values Subsequences](./17-distinct-values-subsequences.md) — [`CSES 3421`](https://cses.fi/problemset/task/3421) — ⚪ Pending
-- [ ] **Problem 18**: [Josephus Problem I](./18-josephus-problem-i.md) — [`CSES 2162`](https://cses.fi/problemset/task/2162) — ⚪ Pending
-- [ ] **Problem 19**: [Josephus Problem II](./19-josephus-problem-ii.md) — [`CSES 2163`](https://cses.fi/problemset/task/2163) — ⚪ Pending
-- [ ] **Problem 20**: [Nested Ranges Check](./20-nested-ranges-check.md) — [`CSES 2168`](https://cses.fi/problemset/task/2168) — ⚪ Pending
+- [x] **Problem 11**: [Collecting Numbers](./11-collecting-numbers.md) — [`CSES 2216`](https://cses.fi/problemset/task/2216) — 🟢 Solved
+- [x] **Problem 12**: [Collecting Numbers II](./12-collecting-numbers-ii.md) — [`CSES 2217`](https://cses.fi/problemset/task/2217) — 🟢 Solved
+- [x] **Problem 13**: [Playlist](./13-playlist.md) — [`CSES 1141`](https://cses.fi/problemset/task/1141) — 🟢 Solved
+- [x] **Problem 14**: [Towers](./14-towers.md) — [`CSES 1073`](https://cses.fi/problemset/task/1073) — 🟢 Solved
+- [x] **Problem 15**: [Traffic Lights](./15-traffic-lights.md) — [`CSES 1163`](https://cses.fi/problemset/task/1163) — 🟢 Solved
+- [x] **Problem 16**: [Distinct Values Subarrays](./16-distinct-values-subarrays.md) — [`CSES 3420`](https://cses.fi/problemset/task/3420) — 🟢 Solved
+- [x] **Problem 17**: [Distinct Values Subsequences](./17-distinct-values-subsequences.md) — [`CSES 3421`](https://cses.fi/problemset/task/3421) — 🟢 Solved
+- [x] **Problem 18**: [Josephus Problem I](./18-josephus-problem-i.md) — [`CSES 2162`](https://cses.fi/problemset/task/2162) — 🟢 Solved
+- [x] **Problem 19**: [Josephus Problem II](./19-josephus-problem-ii.md) — [`CSES 2163`](https://cses.fi/problemset/task/2163) — 🟢 Solved
+- [x] **Problem 20**: [Nested Ranges Check](./20-nested-ranges-check.md) — [`CSES 2168`](https://cses.fi/problemset/task/2168) — 🟢 Solved
 - [ ] **Problem 21**: [Nested Ranges Count](./21-nested-ranges-count.md) — [`CSES 2169`](https://cses.fi/problemset/task/2169) — ⚪ Pending
 - [ ] **Problem 22**: [Room Allocation](./22-room-allocation.md) — [`CSES 1164`](https://cses.fi/problemset/task/1164) — ⚪ Pending
 - [ ] **Problem 23**: [Factory Machines](./23-factory-machines.md) — [`CSES 1620`](https://cses.fi/problemset/task/1620) — ⚪ Pending

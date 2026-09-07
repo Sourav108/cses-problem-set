@@ -11,16 +11,16 @@ Mastery of sorting, binary search on answers, two pointers, sweep-line algorithm
 
 ## 📋 Problem Checklist
 
-- [ ] **Problem 01**: [Distinct Numbers](./01-distinct-numbers.md) — [`CSES 1621`](https://cses.fi/problemset/task/1621) — ⚪ Pending
-- [ ] **Problem 02**: [Apartments](./02-apartments.md) — [`CSES 1084`](https://cses.fi/problemset/task/1084) — ⚪ Pending
-- [ ] **Problem 03**: [Ferris Wheel](./03-ferris-wheel.md) — [`CSES 1090`](https://cses.fi/problemset/task/1090) — ⚪ Pending
-- [ ] **Problem 04**: [Concert Tickets](./04-concert-tickets.md) — [`CSES 1091`](https://cses.fi/problemset/task/1091) — ⚪ Pending
-- [ ] **Problem 05**: [Restaurant Customers](./05-restaurant-customers.md) — [`CSES 1619`](https://cses.fi/problemset/task/1619) — ⚪ Pending
-- [ ] **Problem 06**: [Movie Festival](./06-movie-festival.md) — [`CSES 1629`](https://cses.fi/problemset/task/1629) — ⚪ Pending
-- [ ] **Problem 07**: [Sum of Two Values](./07-sum-of-two-values.md) — [`CSES 1640`](https://cses.fi/problemset/task/1640) — ⚪ Pending
-- [ ] **Problem 08**: [Maximum Subarray Sum](./08-maximum-subarray-sum.md) — [`CSES 1643`](https://cses.fi/problemset/task/1643) — ⚪ Pending
-- [ ] **Problem 09**: [Stick Lengths](./09-stick-lengths.md) — [`CSES 1074`](https://cses.fi/problemset/task/1074) — ⚪ Pending
-- [ ] **Problem 10**: [Missing Coin Sum](./10-missing-coin-sum.md) — [`CSES 2183`](https://cses.fi/problemset/task/2183) — ⚪ Pending
+- [x] **Problem 01**: [Distinct Numbers](./01-distinct-numbers.md) — [`CSES 1621`](https://cses.fi/problemset/task/1621) — 🟢 Solved
+- [x] **Problem 02**: [Apartments](./02-apartments.md) — [`CSES 1084`](https://cses.fi/problemset/task/1084) — 🟢 Solved
+- [x] **Problem 03**: [Ferris Wheel](./03-ferris-wheel.md) — [`CSES 1090`](https://cses.fi/problemset/task/1090) — 🟢 Solved
+- [x] **Problem 04**: [Concert Tickets](./04-concert-tickets.md) — [`CSES 1091`](https://cses.fi/problemset/task/1091) — 🟢 Solved
+- [x] **Problem 05**: [Restaurant Customers](./05-restaurant-customers.md) — [`CSES 1619`](https://cses.fi/problemset/task/1619) — 🟢 Solved
+- [x] **Problem 06**: [Movie Festival](./06-movie-festival.md) — [`CSES 1629`](https://cses.fi/problemset/task/1629) — 🟢 Solved
+- [x] **Problem 07**: [Sum of Two Values](./07-sum-of-two-values.md) — [`CSES 1640`](https://cses.fi/problemset/task/1640) — 🟢 Solved
+- [x] **Problem 08**: [Maximum Subarray Sum](./08-maximum-subarray-sum.md) — [`CSES 1643`](https://cses.fi/problemset/task/1643) — 🟢 Solved
+- [x] **Problem 09**: [Stick Lengths](./09-stick-lengths.md) — [`CSES 1074`](https://cses.fi/problemset/task/1074) — 🟢 Solved
+- [x] **Problem 10**: [Missing Coin Sum](./10-missing-coin-sum.md) — [`CSES 2183`](https://cses.fi/problemset/task/2183) — 🟢 Solved
 - [ ] **Problem 11**: [Collecting Numbers](./11-collecting-numbers.md) — [`CSES 2216`](https://cses.fi/problemset/task/2216) — ⚪ Pending
 - [ ] **Problem 12**: [Collecting Numbers II](./12-collecting-numbers-ii.md) — [`CSES 2217`](https://cses.fi/problemset/task/2217) — ⚪ Pending
 - [ ] **Problem 13**: [Playlist](./13-playlist.md) — [`CSES 1141`](https://cses.fi/problemset/task/1141) — ⚪ Pending

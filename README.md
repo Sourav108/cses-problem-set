@@ -9,7 +9,7 @@
 
 | # | Category Folder | Core Topics & Techniques Covered | Problem Count | Status |
 |---|---|---|:---:|:---:|
-| 01 | [**01-Introductory-Problems**](./01-Introductory-Problems/README.md) | Simulation, Bit Manipulation, Recursion, Number Theory Basics, Constructive Math | **24** | 🟢 In Progress (15/24) |
+| 01 | [**01-Introductory-Problems**](./01-Introductory-Problems/README.md) | Simulation, Bit Manipulation, Recursion, Number Theory Basics, Constructive Math | **24** | 🟢 Completed (24/24) |
 | 02 | [**02-Sorting-and-Searching**](./02-Sorting-and-Searching/README.md) | Binary Search on Answer, Two Pointers, Sweep-line, Coordinate Compression, Greedy | **35** | ⚪ Scaffolding Ready |
 | 03 | [**03-Dynamic-Programming**](./03-Dynamic-Programming/README.md) | 1D/2D DP, Coin Change, Knapsack, LIS $\mathcal{O}(n \log n)$, Grid Paths, Digit DP, Bitmask DP | **23** | ⚪ Scaffolding Ready |
 | 04 | [**04-Graph-Algorithms**](./04-Graph-Algorithms/README.md) | BFS/DFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal (DSU), Kahn's Topo, Tarjan SCC | **36** | ⚪ Scaffolding Ready |

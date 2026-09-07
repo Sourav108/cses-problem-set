@@ -26,15 +26,15 @@ Foundational algorithms: Simulation, Bit Manipulation, Recursion, Number Theory,
 - [x] **Problem 13**: [Gray Code](./13-gray-code.md) — [`CSES 2205`](https://cses.fi/problemset/task/2205) — 🟢 Solved
 - [x] **Problem 14**: [Tower of Hanoi](./14-tower-of-hanoi.md) — [`CSES 2165`](https://cses.fi/problemset/task/2165) — 🟢 Solved
 - [x] **Problem 15**: [Creating Strings](./15-creating-strings.md) — [`CSES 1622`](https://cses.fi/problemset/task/1622) — 🟢 Solved
-- [ ] **Problem 16**: [Apple Division](./16-apple-division.md) — [`CSES 1623`](https://cses.fi/problemset/task/1623) — ⚪ Pending
-- [ ] **Problem 17**: [Chessboard and Queens](./17-chessboard-and-queens.md) — [`CSES 1624`](https://cses.fi/problemset/task/1624) — ⚪ Pending
-- [ ] **Problem 18**: [Raab Game I](./18-raab-game-i.md) — [`CSES 3399`](https://cses.fi/problemset/task/3399) — ⚪ Pending
-- [ ] **Problem 19**: [Mex Grid Construction](./19-mex-grid-construction.md) — [`CSES 3419`](https://cses.fi/problemset/task/3419) — ⚪ Pending
-- [ ] **Problem 20**: [Knight Moves Grid](./20-knight-moves-grid.md) — [`CSES 3217`](https://cses.fi/problemset/task/3217) — ⚪ Pending
-- [ ] **Problem 21**: [Grid Coloring I](./21-grid-coloring-i.md) — [`CSES 3311`](https://cses.fi/problemset/task/3311) — ⚪ Pending
-- [ ] **Problem 22**: [Digit Queries](./22-digit-queries.md) — [`CSES 2431`](https://cses.fi/problemset/task/2431) — ⚪ Pending
-- [ ] **Problem 23**: [String Reorder](./23-string-reorder.md) — [`CSES 1743`](https://cses.fi/problemset/task/1743) — ⚪ Pending
-- [ ] **Problem 24**: [Grid Path Description](./24-grid-path-description.md) — [`CSES 1625`](https://cses.fi/problemset/task/1625) — ⚪ Pending
+- [x] **Problem 16**: [Apple Division](./16-apple-division.md) — [`CSES 1623`](https://cses.fi/problemset/task/1623) — 🟢 Solved
+- [x] **Problem 17**: [Chessboard and Queens](./17-chessboard-and-queens.md) — [`CSES 1624`](https://cses.fi/problemset/task/1624) — 🟢 Solved
+- [x] **Problem 18**: [Raab Game I](./18-raab-game-i.md) — [`CSES 3399`](https://cses.fi/problemset/task/3399) — 🟢 Solved
+- [x] **Problem 19**: [Mex Grid Construction](./19-mex-grid-construction.md) — [`CSES 3419`](https://cses.fi/problemset/task/3419) — 🟢 Solved
+- [x] **Problem 20**: [Knight Moves Grid](./20-knight-moves-grid.md) — [`CSES 3217`](https://cses.fi/problemset/task/3217) — 🟢 Solved
+- [x] **Problem 21**: [Grid Coloring I](./21-grid-coloring-i.md) — [`CSES 3311`](https://cses.fi/problemset/task/3311) — 🟢 Solved
+- [x] **Problem 22**: [Digit Queries](./22-digit-queries.md) — [`CSES 2431`](https://cses.fi/problemset/task/2431) — 🟢 Solved
+- [x] **Problem 23**: [String Reorder](./23-string-reorder.md) — [`CSES 1743`](https://cses.fi/problemset/task/1743) — 🟢 Solved
+- [x] **Problem 24**: [Grid Path Description](./24-grid-path-description.md) — [`CSES 1625`](https://cses.fi/problemset/task/1625) — 🟢 Solved
 
 ---
 

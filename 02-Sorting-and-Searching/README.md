@@ -31,21 +31,21 @@ Mastery of sorting, binary search on answers, two pointers, sweep-line algorithm
 - [x] **Problem 18**: [Josephus Problem I](./18-josephus-problem-i.md) — [`CSES 2162`](https://cses.fi/problemset/task/2162) — 🟢 Solved
 - [x] **Problem 19**: [Josephus Problem II](./19-josephus-problem-ii.md) — [`CSES 2163`](https://cses.fi/problemset/task/2163) — 🟢 Solved
 - [x] **Problem 20**: [Nested Ranges Check](./20-nested-ranges-check.md) — [`CSES 2168`](https://cses.fi/problemset/task/2168) — 🟢 Solved
-- [ ] **Problem 21**: [Nested Ranges Count](./21-nested-ranges-count.md) — [`CSES 2169`](https://cses.fi/problemset/task/2169) — ⚪ Pending
-- [ ] **Problem 22**: [Room Allocation](./22-room-allocation.md) — [`CSES 1164`](https://cses.fi/problemset/task/1164) — ⚪ Pending
-- [ ] **Problem 23**: [Factory Machines](./23-factory-machines.md) — [`CSES 1620`](https://cses.fi/problemset/task/1620) — ⚪ Pending
-- [ ] **Problem 24**: [Tasks and Deadlines](./24-tasks-and-deadlines.md) — [`CSES 1630`](https://cses.fi/problemset/task/1630) — ⚪ Pending
-- [ ] **Problem 25**: [Reading Books](./25-reading-books.md) — [`CSES 1631`](https://cses.fi/problemset/task/1631) — ⚪ Pending
-- [ ] **Problem 26**: [Sum of Three Values](./26-sum-of-three-values.md) — [`CSES 1641`](https://cses.fi/problemset/task/1641) — ⚪ Pending
-- [ ] **Problem 27**: [Sum of Four Values](./27-sum-of-four-values.md) — [`CSES 1642`](https://cses.fi/problemset/task/1642) — ⚪ Pending
-- [ ] **Problem 28**: [Nearest Smaller Values](./28-nearest-smaller-values.md) — [`CSES 1645`](https://cses.fi/problemset/task/1645) — ⚪ Pending
-- [ ] **Problem 29**: [Subarray Sums I](./29-subarray-sums-i.md) — [`CSES 1660`](https://cses.fi/problemset/task/1660) — ⚪ Pending
-- [ ] **Problem 30**: [Subarray Sums II](./30-subarray-sums-ii.md) — [`CSES 1661`](https://cses.fi/problemset/task/1661) — ⚪ Pending
-- [ ] **Problem 31**: [Subarray Divisibility](./31-subarray-divisibility.md) — [`CSES 1662`](https://cses.fi/problemset/task/1662) — ⚪ Pending
-- [ ] **Problem 32**: [Distinct Values Subarrays II](./32-distinct-values-subarrays-ii.md) — [`CSES 2428`](https://cses.fi/problemset/task/2428) — ⚪ Pending
-- [ ] **Problem 33**: [Array Division](./33-array-division.md) — [`CSES 1085`](https://cses.fi/problemset/task/1085) — ⚪ Pending
-- [ ] **Problem 34**: [Movie Festival II](./34-movie-festival-ii.md) — [`CSES 1632`](https://cses.fi/problemset/task/1632) — ⚪ Pending
-- [ ] **Problem 35**: [Maximum Subarray Sum II](./35-maximum-subarray-sum-ii.md) — [`CSES 1644`](https://cses.fi/problemset/task/1644) — ⚪ Pending
+- [x] **Problem 21**: [Nested Ranges Count](./21-nested-ranges-count.md) — [`CSES 2169`](https://cses.fi/problemset/task/2169) — 🟢 Solved
+- [x] **Problem 22**: [Room Allocation](./22-room-allocation.md) — [`CSES 1164`](https://cses.fi/problemset/task/1164) — 🟢 Solved
+- [x] **Problem 23**: [Factory Machines](./23-factory-machines.md) — [`CSES 1620`](https://cses.fi/problemset/task/1620) — 🟢 Solved
+- [x] **Problem 24**: [Tasks and Deadlines](./24-tasks-and-deadlines.md) — [`CSES 1630`](https://cses.fi/problemset/task/1630) — 🟢 Solved
+- [x] **Problem 25**: [Reading Books](./25-reading-books.md) — [`CSES 1631`](https://cses.fi/problemset/task/1631) — 🟢 Solved
+- [x] **Problem 26**: [Sum of Three Values](./26-sum-of-three-values.md) — [`CSES 1641`](https://cses.fi/problemset/task/1641) — 🟢 Solved
+- [x] **Problem 27**: [Sum of Four Values](./27-sum-of-four-values.md) — [`CSES 1642`](https://cses.fi/problemset/task/1642) — 🟢 Solved
+- [x] **Problem 28**: [Nearest Smaller Values](./28-nearest-smaller-values.md) — [`CSES 1645`](https://cses.fi/problemset/task/1645) — 🟢 Solved
+- [x] **Problem 29**: [Subarray Sums I](./29-subarray-sums-i.md) — [`CSES 1660`](https://cses.fi/problemset/task/1660) — 🟢 Solved
+- [x] **Problem 30**: [Subarray Sums II](./30-subarray-sums-ii.md) — [`CSES 1661`](https://cses.fi/problemset/task/1661) — 🟢 Solved
+- [x] **Problem 31**: [Subarray Divisibility](./31-subarray-divisibility.md) — [`CSES 1662`](https://cses.fi/problemset/task/1662) — 🟢 Solved
+- [x] **Problem 32**: [Distinct Values Subarrays II](./32-distinct-values-subarrays-ii.md) — [`CSES 2428`](https://cses.fi/problemset/task/2428) — 🟢 Solved
+- [x] **Problem 33**: [Array Division](./33-array-division.md) — [`CSES 1085`](https://cses.fi/problemset/task/1085) — 🟢 Solved
+- [x] **Problem 34**: [Movie Festival II](./34-movie-festival-ii.md) — [`CSES 1632`](https://cses.fi/problemset/task/1632) — 🟢 Solved
+- [x] **Problem 35**: [Maximum Subarray Sum II](./35-maximum-subarray-sum-ii.md) — [`CSES 1644`](https://cses.fi/problemset/task/1644) — 🟢 Solved
 
 ---
 

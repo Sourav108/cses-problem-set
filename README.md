@@ -14,7 +14,7 @@
 | 03 | [**03-Dynamic-Programming**](./03-Dynamic-Programming/README.md) | 1D/2D DP, Coin Change, Knapsack, LIS $\mathcal{O}(n \log n)$, Grid Paths, Digit DP, Bitmask DP | **23** | 🟢 Completed (23/23) |
 | 04 | [**04-Graph-Algorithms**](./04-Graph-Algorithms/README.md) | BFS/DFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal (DSU), Kahn's Topo, Tarjan SCC | **36** | 🟢 Completed (36/36) |
 | 05 | [**05-Range-Queries**](./05-Range-Queries/README.md) | Static Range Queries, Fenwick Tree (BIT), Segment Tree (Point/Range Updates), Lazy Propagation | **25** | 🟢 Completed (25/25) |
-| 06 | [**06-Tree-Algorithms**](./06-Tree-Algorithms/README.md) | Tree Traversals, Subtree Sizes, Tree Diameter, Binary Lifting (LCA), Centroid Decomposition | **16** | ⚪ Scaffolding Ready |
+| 06 | [**06-Tree-Algorithms**](./06-Tree-Algorithms/README.md) | Tree Traversals, Subtree Sizes, Tree Diameter, Binary Lifting (LCA), Centroid Decomposition | **16** | 🟢 Completed (16/16) |
 | 07 | [**07-Mathematics**](./07-Mathematics/README.md) | Exponentiation, Modular Inverse, Extended Euclidean, Matrix Exponentiation, Combinatorics, Primes | **37** | ⚪ Scaffolding Ready |
 | 08 | [**08-String-Algorithms**](./08-String-Algorithms/README.md) | Polynomial String Hashing, Trie, KMP (Prefix Function), Z-Algorithm, Aho-Corasick | **21** | ⚪ Scaffolding Ready |
 | 09 | [**09-Geometry**](./09-Geometry/README.md) | Cross/Dot Product, Point Orientation, Line Segment Intersection, Polygon Area, Convex Hull | **16** | ⚪ Scaffolding Ready |
